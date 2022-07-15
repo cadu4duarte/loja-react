@@ -40,7 +40,7 @@ export function Home() {
   const AllCategories = [ ...new Set(products.map(item => item.category))];
 
   function addInCart(product) {
-    // console.log(product)
+    console.log(product)
 
     //getCart recebe os itens dentro do local storage e é um array vazio
     let getCart = JSON.parse(localStorage.getItem("products")) || [];

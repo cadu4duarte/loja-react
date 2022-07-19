@@ -1,0 +1,19 @@
+.cart {
+   
+  min-height: 35rem;
+} 
+.cartBox {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+}
+.cartBox div { 
+  width: 20rem;
+  border-top: 1px solid rgb(207, 207, 255);
+}
+.cartImage {
+  width: 15rem;
+}
+.cartImage img {
+  max-width: 50%;
+}

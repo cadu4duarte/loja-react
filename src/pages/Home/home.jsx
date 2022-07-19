@@ -51,12 +51,8 @@ export function Home() {
     //setando os itens do array no local storage
     localStorage.setItem("products", JSON.stringify(getCart));
     alert("Product set in cart");
-
-    
-    
+ 
   }
-
-  
 
   return(
    <div className="container">
@@ -67,7 +63,7 @@ export function Home() {
           return(
             <>
               <input type="radio" id={item} name='option' value='option' onClick={()=>filterProducts(item)}/>
-              <label for={item}>{item}</label> <br/>
+              <label htmlFor={item}>{item}</label> <br/>
             </>
           )
         }))}

@@ -1,18 +1,21 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import "./header.css"
 
 export function Header() {
   return(
     <header>
-      <h1>FakeShop</h1>
+      <h1>
+        <Link to="/">FakeShop</Link>
+      </h1>
 
       <ul>
         <li>
-          <a href="">cart</a>
+          <Link to="/cart">cart</Link>
         </li>
 
         <li>
-          <a href="">about</a>
+          <Link to="/about">about</Link>
         </li>
       </ul>
     </header>
